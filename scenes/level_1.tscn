@@ -2,7 +2,7 @@
 
 [ext_resource type="TileSet" uid="uid://ds60xektfynrs" path="res://resources/level_1_tiles.tres" id="1_bswci"]
 [ext_resource type="PackedScene" uid="uid://0ufjsrnt784y" path="res://scenes/character.tscn" id="2_bswci"]
-[ext_resource type="PackedScene" uid="uid://b0x53lqqsnb8i" path="res://scenes/coin.tscn" id="3_rus8k"]
+[ext_resource type="PackedScene" path="res://scenes/coin.tscn" id="3_rus8k"]
 
 [node name="Level1" type="Node2D"]
 
@@ -11,6 +11,7 @@ tile_map_data = PackedByteArray("AAD//wEAAAAAAAAAAAAAAAEAAAAAAAAAAAABAAEAAAAAAAA
 tile_set = ExtResource("1_bswci")
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_bswci")]
+position = Vector2(-92, 0)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
